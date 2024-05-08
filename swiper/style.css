@@ -1,0 +1,222 @@
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  background-size: cover;
+  height: 920px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  height: 960px;
+}
+
+.sl1 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cent_osn{
+  display: flex;
+  height: 575px;
+  width: 100%;
+  max-width: 2000px;
+  align-items: end;
+}
+
+.obj{
+  display: flex;
+  margin-left: 100px;
+  max-width: 2000px;
+  width: 100%;
+  height: 200px;
+  justify-content: start;
+  align-items: center;
+}
+
+.krug{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 5px solid black;
+  transform: rotate(45deg);
+}
+
+.crug_line_vertikal{
+  width: 5px;
+  height: 200px;
+  background-color: #000;
+}
+
+.crug_line_horizontal{
+  width: 105px;
+  height: 5px;
+  background-color: #000;
+}
+
+.strelochki{
+  display: flex;
+  width: 110px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.strelochka_verh{
+  background-image: url(./img/arrow-verh.svg);
+  width: 110px;
+  height: 50px;
+}
+
+.strelochka_cent{
+  background-image: url(./img/arrow-cent.svg);
+  width: 110px;
+  height: 50px;
+}
+
+.strelochka_niz{
+  background-image: url(./img/arrow-niz.svg);
+  width: 110px;
+  height: 50px;
+}
+
+.palochki{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.palochka_conteiner{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.palochka_vis{
+  width: 2px;
+  height: 200px;
+  background-color: #000;
+}
+
+.palochka_mal{
+  width: 2px;
+  height: 50px;
+  background-color: #000;
+}
+
+.zag_text{
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  font-size: 50px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.ob_text{
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  font-size: 35px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.mal_text{
+  width: 100%;
+  max-width: 1000px;
+  height: 50px;
+  font-size: 35px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.nomer_slaida{
+  background-image: url(./img/Рисунок2.png);
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fon{
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.rot{
+  position: absolute;
+  background-image: url(./img/Рисунок1.png);
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  font-size: 40px;
+  font-weight: bold;
+  animation: rotateClockwise 5s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
